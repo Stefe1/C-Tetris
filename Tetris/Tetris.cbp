@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tetris" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tetris" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tetris" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2" />
+			<Add library="SDL2_gfx" />
+			<Add library="SDL2_image" />
+			<Add library="SDL2_mixer" />
+			<Add library="SDL2_ttf" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="Alakzatok_inicializalasa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Alakzatok_inicializalasa.h" />
+		<Unit filename="Elorejelzes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Elorejelzes.h" />
+		<Unit filename="Eredmeny_mentese.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Eredmeny_mentese.h" />
+		<Unit filename="Jatek_utani_nezet.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Jatek_utani_nezet.h" />
+		<Unit filename="beallitasok.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="beallitasok.h" />
+		<Unit filename="collision_detection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="collision_detection.h" />
+		<Unit filename="debugmalloc.h" />
+		<Unit filename="dicsoseglista.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dicsoseglista.h" />
+		<Unit filename="gomb_nezet_strukturai.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gomb_nezet_strukturai.h" />
+		<Unit filename="hatter_betoltes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hatter_betoltes.h" />
+		<Unit filename="kesz_jatek.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kesz_jatek.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="megjelenitesek.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="megjelenitesek.h" />
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.h" />
+		<Unit filename="mozgas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mozgas.h" />
+		<Unit filename="szoveg_beolvasasa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="szoveg_beolvasasa.h" />
+		<Unit filename="tetris_palya.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tetris_palya.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

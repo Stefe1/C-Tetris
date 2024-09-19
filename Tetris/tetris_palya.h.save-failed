@@ -1,0 +1,25 @@
+#ifndef MEGJELENITESEK_H_INCLUDED
+#define MEGJELENITESEK_H_INCLUDED
+#include "tetris_palya.h"
+
+typedef struct Alak{
+    int poziciok[4];
+    int szam;
+} Alak;
+
+int magassag=30,szelesseg=40;
+
+Alak *alak_sorsolas(Alak *i,Alak *t,Alak *o,Alak *s,Alak *z,Alak *j,Alak *l);
+
+void tablazat_inicializalasa(int tomb[magassag][szelesseg],int magassag,int szelesseg);
+
+
+bool also_utkozes(int jelenlegi,Alak *ponyter,int magassag, int szelesseg,int sor,int oszlop,int tomb[magassag][szelesseg]);
+
+
+void elem_lementese(int tomb[magassag][szelesseg],int szelesseg,int sor,int oszlop,int jelenlegi, Alak *ponyter);
+
+static void lejebb_mozgatas(int tomb[magassag][szelesseg],int kezdoertek, int szelesseg);
+
+void telesorok(int tomb[magassag][szelesseg], int magassag, int szelesseg);
+
